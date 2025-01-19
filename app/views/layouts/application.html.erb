@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <%= javascript_importmap_tags %>
+
   <head>
+
     <title><%= content_for(:title) || "Alpha Blog" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -23,6 +26,6 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/messages'%>
   </body>
 </html>
