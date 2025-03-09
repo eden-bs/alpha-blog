@@ -1,0 +1,19 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#page-content {
+    flex: 1;
+    background-color: lightgrey;
+}
+
+#sticky-footer {
+    flex-shrink: 0;
+}
