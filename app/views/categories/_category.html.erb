@@ -1,0 +1,23 @@
+<style>
+.badge-pill {
+  display: inline-block;
+  padding: 0.4em 0.75em;
+  font-size: 90%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 50rem;
+  background-color: #17a2b8; /* Bootstrap info color */
+  text-decoration: none;
+}
+
+.badge-pill:hover {
+  background-color: #138496; /* Darker shade on hover */
+  color: white;
+}
+</style>
+
+<%= link_to category.name, category_path(category), class: "badge badge-pill badge-info mr-1" %>
